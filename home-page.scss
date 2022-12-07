@@ -1,0 +1,758 @@
+$background-color: #EEEEEC;
+$primary-color-dark: #1D211C;
+$primary-color-light: rgb(198, 200, 186);
+
+@mixin imagestyling ($imagewidth: 200px, $imageheight: 100px) {
+    width: $imagewidth;
+        height: $imageheight;
+        border-radius: 20px;
+}
+
+
+body {
+    margin: 0;
+    background-color: $background-color;
+}
+
+header {
+    height: 300px;
+}
+
+
+main {
+    display: flex;
+    padding: 2em 0;
+}
+
+.header-element {
+    position: relative;
+    height: 250px;
+
+    &__img {
+        height: 250px;
+        min-width: 100%;
+        object-fit: cover;
+        object-position: 90% 60%;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 2em;
+        top: 1em;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+    h1 {
+        color: $background-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+
+.search-bar {
+    background-color: $primary-color-dark;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    i {
+        color: $primary-color-light;
+    }
+    input {
+        cursor: pointer;
+        background-color: $primary-color-light;
+        border: none;
+    }
+    select {
+        cursor: pointer;
+        background-color: $primary-color-light;
+    }
+    button {
+        cursor: pointer;
+        width: 100px;
+        border: none;
+        color: $primary-color-dark;
+        background-color: $primary-color-light;
+        &:hover {
+            color: $background-color;
+        }
+    }
+}
+
+
+.destination-content {
+    color: $primary-color-dark;
+    width: 300px;
+    text-align: center;
+    padding: 1em 1em 1em 2em;
+
+    h2 {
+        margin-top: 0;
+    }
+    img {
+        @include imagestyling;
+    }
+    h3 {
+        color: $primary-color-dark;
+    }
+
+    &__location {
+        padding: 0.5em;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {
+            opacity: 70%;
+        }
+    }
+}
+
+.accommodation-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0 3rem;
+    
+    &__card {
+        height: 350px;
+        padding: 1em;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 5px 5px 5px #1D211C;
+        }
+    }
+
+    img {
+        @include imagestyling($imagewidth: 300px, $imageheight: 200px)
+    }
+
+    &__info {
+        padding: 0 .5em 0 .5em;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            margin-bottom: 0;
+            color: $primary-color-dark;
+        }
+    }
+
+    h5 {
+        margin: 0;
+        padding-bottom: 2em;
+        text-align: end;
+        color: $primary-color-dark;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .stars {
+        i {
+            color: goldenrod;
+        }    
+    }
+
+    &__location {
+        display: flex;
+        h4 {
+            margin: 0;
+            padding-left: .5em;
+            color: $primary-color-dark;
+        }
+    }
+}
+
+.landingpage-info {
+    height: 350px;
+        padding: 1em;
+        border-radius: 20px;
+}
+
+
+//booking page
+.booking-page {
+    #booking-page__back-button {
+        padding: 1em;
+        cursor: pointer;
+        &:hover {
+            color: $primary-color-light;
+        }
+    }
+    
+    &__info {
+        padding: 1em 3em;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    &__booking-details {
+        width: 50%;
+    }
+
+    &__hotel-info {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        padding-bottom: 2em;
+        margin: 0;
+        img {
+            @include imagestyling ($imagewidth: 200px, $imageheight:150px);
+        }
+    }
+
+    &__rating {
+        text-align: right;
+        color: goldenrod;
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        p {
+            padding: 0 0.2em;
+        }
+    }
+
+    &__booking-info {
+        background-color: $primary-color-light;
+        border-radius: 20px;
+        width: 400px;
+        h3 {
+            text-align: left;
+            margin: 0;
+            padding: 1em;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1em;
+        }
+    }
+
+
+    &__personal-details {
+        width: 50%;
+        h3 {
+            text-align: left;
+        }
+        h4 {
+            text-align: left;
+        }
+        p {
+            text-align: left;
+        }
+        input {
+            cursor: pointer;
+            background-color: $primary-color-light;
+            border: none;
+            height: 25px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 1em;
+            width: 200px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: $primary-color-light;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                color: $primary-color-light;
+                background-color: $primary-color-dark;
+            }
+        }
+    }
+
+    &__personal-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        p {
+            margin: 0;
+        }
+    }
+
+
+}
+
+
+//last page
+.last-page {
+    padding: 2em 3em;
+    &__back-home {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            color: $primary-color-light;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    &__booking-details {
+        padding: 0 3em 3em 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__activity {
+        cursor: pointer;
+        padding: 1em 0;
+        width: 100%;
+        overflow: scroll;
+        display: flex;
+        justify-content: space-between;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .activity-container {
+        text-align: right;
+        padding-right: 3em;
+        &:hover {
+            opacity: 70%;
+        }
+        img {
+            @include imagestyling($imagewidth: 250px, $imageheight:150px);
+        }
+        p {
+            margin: 0;
+            padding: 0.3em 1em;
+        }
+    }
+}
+
+footer {
+    img {
+        min-width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    background-color: $primary-color-dark;
+}
+
+.footer-info {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    &__content {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            color: $primary-color-light;
+            cursor: pointer;
+        }
+    }
+
+    &__social-media {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            cursor: pointer;
+            color: $primary-color-light;
+        }
+    }
+
+    &__language {
+        display: flex;
+        align-items: center;
+        border-bottom: $primary-color-light 2px solid;
+        padding: 0 0 .2em 0;
+        h5 {
+            color: $primary-color-light;
+            margin: 0;
+            padding-right: 1em;
+        }
+    }
+}
+
+
+//accommodation details page
+.accommodation-info {
+    padding: 1em 3em;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $primary-color-light;
+
+    #back-button {
+        padding: 1em 1em 1em 0;
+    }
+
+    .hotel-image__container {
+        display: flex;
+        width: 350px;
+        overflow: hidden;
+    }
+
+    .hotel-image__wrapper {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    img {
+        @include imagestyling($imagewidth: 350px, $imageheight: 200px)
+    }
+    
+    .banner-buttons {
+        text-align: center;
+        padding: 0.5em 0;
+    }
+
+    .banner-button {
+        cursor: pointer;
+    }
+
+    &__container {
+        text-align: center;
+        width: 350px;
+        background-color: $primary-color-dark;
+        border-radius: 20px;
+    }
+
+    &__booking {
+        position: relative;
+        top: 1em;
+        background-color: $primary-color-light;
+        padding: 0.5em;
+        width: 300px;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    &__booking-choice {
+        .date {
+            padding: 0.5em;
+            display: flex;
+            justify-content: space-between;
+        }
+        border-bottom: 1px solid $primary-color-dark;
+    }
+
+    .guests {
+        padding: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        #guests {
+            text-align: right;
+            cursor: pointer;
+        }
+    }
+}
+
+.extra-container {
+    color: $primary-color-light;
+    padding: 1em;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__chocice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__checkpoint {
+        display: flex;
+        align-items: center;
+        input {
+            cursor: pointer;
+        }
+    }
+
+}
+
+.booking-button {
+    cursor: pointer;
+    min-width: 90%;
+    background-color: $primary-color-light;
+    color: $primary-color-dark;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    &:hover {
+        color: $background-color
+    }
+}
+
+.total-price {
+    color: $primary-color-light;
+    text-align: right;
+    font-size: 20px;
+    padding: 0 1em 1em 1em;
+}
+
+.accommodation-details {
+    padding: 0 1em 0 4em;
+    color: $primary-color-dark;
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__location-info {
+        display: flex;
+        justify-content: space-between;
+        .rating {
+            color: goldenrod;
+        }
+    }
+
+    &__location {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            padding: 0 0.5em;
+            margin: 0;
+        }
+    }
+
+    &__room-type {
+        display: flex;
+    }
+
+    &__group-size {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bed-size {
+        padding-left: 3em;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icons {
+        padding: 1em 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #map {
+        height: 250px;
+        top: 5em;
+        border-radius: 20px;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+@media (max-width: 900px) {
+    //main page
+    .accommodation-content__card {
+        img {
+            @include imagestyling($imagewidth: 250px, $imageheight: 170px)
+        }
+    }
+
+    //booking page
+    .booking-page {
+        &__info {
+            display: block;
+        }
+        &__booking-details {
+            width: 90%;
+            margin: auto;
+        }
+        &__hotel-info {
+            width: 100%;
+        }
+        &__booking-info {
+            width: 100%;
+        }
+        &__personal-details {
+            padding: 1em 2em;
+            width: 80%;
+            margin: auto;
+        }
+    }
+    
+    //info page
+    .info-container {
+        width: 250px;
+        img {
+            width: 250px;
+        }
+    }
+    .accommodation-info__container {
+        width: 250px;
+    }
+    .accommodation-info__booking {
+        width: 200px;
+    }
+    .accommodation-details {
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 15px;
+        }
+    }
+    .accommodation-details__icons {
+        i {
+            font-size: 20px;
+        }
+    }
+
+
+    //last page
+    .last-page {
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        height: 400px;
+    }
+    .header-element {
+        height: 200px;
+        h1 {
+            font-size: 25px;
+        }
+        img {
+            height: 200px;
+        }
+    }
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        div {
+            padding: 1em;
+        }
+        button {
+            margin-top: 1em;
+        }
+    }
+    //main page
+    .destination-content {
+        h2 {
+            font-size: 20px;
+        }
+        &__location {
+            img {
+                @include imagestyling($imagewidth: 120px, $imageheight: 90px)
+            }
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+    .accommodation-content__card {
+        img {
+            @include imagestyling($imagewidth: 220px, $imageheight: 120px)
+        }
+    }
+    
+    //info page
+    .accommodation-info {
+        display: block;
+        .hotel-image__container {
+            margin: auto;
+            width: 300px;
+        }
+        &__container {
+            width: 100%;
+            h3 {
+                font-size: 15px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+        &__booking {
+            width: 90%;
+            padding: 0;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+    .info-container {
+        width: 100%;
+        #back-button {
+            padding: 0.3em;
+        }
+        img {
+            height: 150px;
+            width: 300px;
+        }
+    }
+    .extra-container {
+        padding: 0 1em;
+        p {
+            margin: 0;
+        }
+        h4 {
+            margin: 1em;
+        }
+    }
+    .accommodation-details {
+        padding: 0 1em;
+        p {
+            font-size: 12px;
+        }
+        #map {
+            top: 1em;
+        }
+        h2 {
+            margin: 0;
+        }
+        h3 {
+            margin: 0;
+        }
+    }
+
+    //last page
+    .last-page {
+        .activity-container {
+            img {
+                @include imagestyling($imagewidth: 200px ,$imageheight:100px )
+            }
+        }
+    }
+}

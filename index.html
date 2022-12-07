@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home-page.css" />
+    <script
+      src="https://kit.fontawesome.com/1d19d1619d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./home-page.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <title>E-stay</title>
+  </head>
+
+  <body>
+    <form>
+      <div class="header-element">
+        <img
+          class="header-element__img"
+          src="./images/header-image.jpg"
+          alt="header-image"
+        />
+        <a href="./home-page.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
+        <h1>E-Stay<br />Make Your Stay Easier</h1>
+      </div>
+      <div class="search-bar">
+        <div class="search-bar__place">
+          <label for="Destination"
+            ><i class="fa-solid fa-location-dot fa-xl"></i
+          ></label>
+          <input
+            type="search"
+            name="Destination"
+            id="Destination"
+            placeholder="-Your Destination-"
+            required
+          />
+        </div>
+        <div class="search-bar__groupsize">
+          <label for="number-of-people"
+            ><i class="fa-solid fa-user fa-xl"></i
+          ></label>
+          <select name="number-of-people" id="number-of-people" required>
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="search-bar__calendar-checkin">
+          <i class="fa-solid fa-calendar-days fa-xl"></i>
+          <input
+            type="datetime"
+            class="datetime-checkin"
+            placeholder="select the date"
+            required
+          />
+        </div>
+        <button type="submit" class="search-button">Search</button>
+      </div>
+    </form>
+    <main class="main-page">
+      <aside class="destination-content">
+
+      </aside>
+      <div class="accommodation-content">
+        <div class="landingpage-info">
+          <img src="./images/pitt st hostel.jpg" alt="" />
+          <div class="accommodation-content__info">
+            <div class="accommodation-content__name">
+              <h3>Pitt St Hostel</h3>
+              <h3 class="price">NZ$30</h3>
+            </div>
+            <h5>per night</h5>
+            <div class="accommodation-content__rating">
+              <div class="accommodation-content__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Taupo</h4>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="landingpage-info">
+          <img src="./images/President Hotel.jpg" alt="" />
+          <div class="accommodation-content__info">
+            <div class="accommodation-content__name">
+              <h3>President Hotel</h3>
+              <h3 class="price">NZ$157</h3>
+            </div>
+            <h5>per night</h5>
+            <div class="accommodation-content__rating">
+              <div class="accommodation-content__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Auckland</h4>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="landingpage-info">
+          <img src="./images/Pool House.jpg" alt="" />
+          <div class="accommodation-content__info">
+            <div class="accommodation-content__name">
+              <h3>Pool House</h3>
+              <h3 class="price">NZ$240</h3>
+            </div>
+            <h5>per night</h5>
+            <div class="accommodation-content__rating">
+              <div class="accommodation-content__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Wellington</h4>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="landingpage-info">
+          <img src="./images/Queens Motel.jpg" alt="" />
+          <div class="accommodation-content__info">
+            <div class="accommodation-content__name">
+              <h3>Queens Motel</h3>
+              <h3 class="price">NZ$90</h3>
+            </div>
+            <h5>per night</h5>
+            <div class="accommodation-content__rating">
+              <div class="accommodation-content__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Queenstown</h4>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="landingpage-info">
+          <img src="./images/Vintage Motel.jpg" alt="" />
+          <div class="accommodation-content__info">
+            <div class="accommodation-content__name">
+              <h3>Vintage Motel</h3>
+              <h3 class="price">NZ$90</h3>
+            </div>
+            <h5>per night</h5>
+            <div class="accommodation-content__rating">
+              <div class="accommodation-content__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Lake Tekapo</h4>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="landingpage-info">
+          <img src="./images/star hostel.jpg" alt="" />
+          <div class="accommodation-content__info">
+            <div class="accommodation-content__name">
+              <h3>Star Hostel</h3>
+              <h3 class="price">NZ$30</h3>
+            </div>
+            <h5>per night</h5>
+            <div class="accommodation-content__rating">
+              <div class="accommodation-content__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Rotorua</h4>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="landingpage-info">
+          <img src="./images/skyline hotel.jpg" alt="" />
+          <div class="accommodation-content__info">
+            <div class="accommodation-content__name">
+              <h3>Skyline Hotel</h3>
+              <h3 class="price">NZ$157</h3>
+            </div>
+            <h5>per night</h5>
+            <div class="accommodation-content__rating">
+              <div class="accommodation-content__location">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Auckland</h4>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="booking-page hidden">
+      <i
+        class="fa-solid fa-angles-left fa-2xl"
+        id="booking-page__back-button"
+      ></i>
+      <div class="booking-page__info">
+        <div class="booking-page__booking-details">
+          <div class="booking-page__hotel-info">
+            <img class="booking-page__image" src="" alt="" />
+            <div class="booking-page__hotel-name">
+              <h2 class="booking-page__hotel-names"></h2>
+              <div class="booking-page__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <div class="booking-page__location">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+                <p class="booking-page__location-name"></p>
+              </div>
+            </div>
+          </div>
+          <div class="booking-page__booking-info">
+            <h3>Your Trip</h3>
+            <div class="booking-page__checkin">
+              <p>Check-in <br />& Check-out:</p>
+              <p class="check-in-date"></p>
+            </div>
+            <div class="booking-page__guests">
+              <p>Guest:</p>
+              <p class="guest-number"></p>
+            </div>
+            <div class="booking-page__nights">
+              <p class="nights-number"></p>
+              <p class="nights-price"></p>
+            </div>
+            <div class="booking-page__extra">
+              <p>Extra</p>
+              <p class="extra-price"></p>
+            </div>
+            <div class="booking-page__total-price">
+              <p>Total(NZD)</p>
+              <p class="booking-page__price"></p>
+            </div>
+          </div>
+        </div>
+        <div class="booking-page__personal-details">
+          <div class="booking-page__personal-info">
+            <p>First name</p>
+            <input type="text" />
+          </div>
+          <div class="booking-page__personal-info">
+            <p>Last name</p>
+            <input type="text" />
+          </div>
+          <div class="booking-page__personal-info">
+            <p>Phone number</p>
+            <input type="text" />
+          </div>
+          <div class="booking-page__personal-info">
+            <p>Email</p>
+            <input type="text" />
+          </div>
+          <h3>Card Details</h3>
+          <div class="booking-page__personal-info">
+            <p>Card name</p>
+            <input type="text" />
+          </div>
+          <div class="booking-page__personal-info">
+            <p>Card number</p>
+            <input type="text" />
+          </div>
+          <div class="booking-page__personal-info">
+            <p>Expiry date</p>
+            <input type="text" />
+          </div>
+          <div class="booking-page__personal-info">
+            <p>CVV</p>
+            <input type="text" />
+          </div>
+          <h4>Important information about your booking</h4>
+          <p>
+            Check-in after 2pm and Check-out before 10am. Cancellations or
+            changes made after 5:00 pm (property local time) on 15 Jun. 2022 or
+            no-shows are subject to a property fee equal to 100% of the total
+            amount paid for the reservation. Front desk staff will greet guests
+            on arrival.
+          </p>
+          <button class="booking-page__booking-button">Continue to pay</button>
+        </div>
+      </div>
+    </div>
+    <div class="last-page hidden">
+      <div class="last-page__back-home">
+        <i
+          class="fa-solid fa-angles-left fa-2xl"
+          id="last-page__back-button"
+        ></i>
+        <h3>Home</h3>
+      </div>
+      <h2>Booking Confirmed<br />Thank you for Booking!</h2>
+      <h3>Booking Details</h3>
+      <div class="last-page__booking-details">
+        <div class="last-page__destination">
+          <p>Destination:</p>
+          <p class="last-page__destination-name"></p>
+        </div>
+        <div class="last-page__checkin">
+          <p>Check-in & Check-out:</p>
+          <p class="last-page__checkin-date"></p>
+        </div>
+        <div class="last-page__total">
+          <p>Total:</p>
+          <p class="last-page__total-price"></p>
+        </div>
+      </div>
+      <h3>Top Activity</h3>
+      <div class="last-page__activity">
+        <div class="activity-container">
+          <img src="./images/glamping.jpg" alt="" />
+          <p>Glamping</p>
+        </div>
+        <div class="activity-container">
+          <img src="./images/hiking.jpg" alt="" />
+          <p>Hiking</p>
+        </div>
+        <div class="activity-container">
+          <img src="./images/beach-walk.jpg" alt="" />
+          <p>Beach Walk</p>
+        </div>
+        <div class="activity-container">
+          <img src="./images/kayaking.jpg" alt="" />
+          <p>Kayking</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img src="./images/footer-image.jpg" alt="footer image" />
+      <div class="footer-info">
+        <ul class="footer-info__content">
+            <li>@E-Stay</li>
+          <li>About</li>
+          <li>Privacy</li>
+          <li>Term</li>
+          <li>Sitemap</li>
+        </ul>
+        <div class="footer-info__social-media">
+          <div class="footer-info__language">
+            <h5>English</h5>
+            <i class="fa-solid fa-earth-americas fa-lg"></i>
+          </div>
+          <i class="fa-brands fa-facebook fa-xl"></i>
+          <i class="fa-brands fa-instagram fa-xl"></i>
+        </div>
+      </div>
+    </footer>
+    <div class="accommodation-info hidden">
+      <aside class="info-container">
+        <i class="fa-solid fa-angles-left fa-2xl" id="back-button"></i>
+        <div class="hotel-image__container">
+          <div class="hotel-image__wrapper active">
+            <img class="hotel-image" src="" alt="" />
+          </div>
+          <div class="hotel-image__wrapper">
+            <img class="hotel-image" src="./images/room1.jpg" alt="" />
+          </div>
+          <div class="hotel-image__wrapper">
+            <img class="hotel-image" src="./images/room2.jpg" alt="" />
+          </div>
+          <div class="hotel-image__wrapper">
+            <img class="hotel-image" src="./images/room3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="banner-buttons"></div>
+        <div class="accommodation-info__container">
+          <div class="accommodation-info__booking">
+            <div class="accommodation-info__booking-choice">
+              <div class="date">
+                <label for="check-in">Date</label>
+                <input
+                  id="check-in"
+                  type="datetime"
+                  class="accommodation-info__date"
+                />
+              </div>
+            </div>
+            <div class="guests">
+              <label for="guests">Guests</label>
+              <select name="guests" id="guests">
+                <option value="0"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+          <form class="extra-container">
+            <div class="extra-container__title">
+              <h3>Extra</h3>
+              <p>price per night per person</p>
+            </div>
+            <div class="extra-container__chocice">
+              <div class="extra-container__checkpoint">
+                <input
+                  id="choice"
+                  value="0"
+                  type="radio"
+                  name="styles"
+                  required
+                />
+                <h4>No Extra</h4>
+              </div>
+              <p>NZ $0</p>
+            </div>
+            <div class="extra-container__chocice">
+              <div class="extra-container__checkpoint">
+                <input id="choice" value="15" type="radio" name="styles" />
+                <h4>Breakfast</h4>
+              </div>
+              <p>NZ $15</p>
+            </div>
+            <button class="booking-button">Book</button>
+          </form>
+          <p class="total-price"></p>
+        </div>
+      </aside>
+      <div class="accommodation-details">
+        <div class="accommodation-details__description">
+          <div class="accommodation-details__name">
+            <h2 class="hotel-name"></h2>
+            <h3 class="hotel-price"></h3>
+          </div>
+          <div class="accommodation-details__location-info">
+            <div class="accommodation-details__location">
+              <i class="fa-solid fa-location-dot fa-lg"></i>
+              <p class="location-name"></p>
+            </div>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p>
+            Recently renovated, fully-furnished lake-front house, as a
+            family-owned property has been dedicatedly maintained for years.
+            Providing plenty of happily spaces for entertainment and relaxation.
+            The back of the house with a private garden with beautiful lawn
+            directly extend to the lakeside, sharing these stunning dawn and
+            dusk scenes with
+          </p>
+          <h3>Room Type:</h3>
+          <div class="accommodation-details__room-type">
+            <div class="accommodation-details__group-size">
+              <i class="fa-solid fa-user-group"></i>
+              <p class="room-size"></p>
+            </div>
+            <div class="accommodation-details__bed-size">
+              <i class="fa-solid fa-bed"></i>
+              <p>2 King bed</p>
+            </div>
+          </div>
+          <h3>Features & Amenities</h3>
+          <div class="accommodation-details__icons">
+            <i class="fa-solid fa-wifi fa-2xl"></i>
+            <i class="fa-solid fa-square-parking fa-2xl"></i>
+            <i class="fa-solid fa-display fa-2xl"></i>
+            <i class="fa-solid fa-cart-flatbed-suitcase fa-2xl"></i>
+            <i class="fa-solid fa-van-shuttle fa-2xl"></i>
+            <i class="fa-solid fa-fan fa-2xl"></i>
+            <i class="fa-solid fa-temperature-arrow-up fa-2xl"></i>
+            <i class="fa-solid fa-champagne-glasses fa-2xl"></i>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </body>
+</html>

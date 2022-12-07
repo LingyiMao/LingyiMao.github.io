@@ -1,0 +1,692 @@
+{
+    "accommodations": [
+        {
+            "name": "Palm Tree Hotel",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnightss": 5
+        },
+        {
+            "name": "Skyline Hotel",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnightss": 5
+        },
+        {
+            "name": "Paradise Hotel",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Blue Hostel",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Pitt St Hostel",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "This Motel",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Queens Motel",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Forest House",
+            "location": "Queenstown",
+            "locationID": 1,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "President Hotel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Skyline Hotel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Palm Tree Hotel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Paradise Hotel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Pitt St Hostel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Star Hostel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Vintage Motel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Queens Motel",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Pool House",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "Forest House",
+            "location": "Auckland",
+            "locationID": 2,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "Palm Tree Hotel",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Skyline Hotel",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Paradise Hotel",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Blue Hostel",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Pitt St Hostel",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "This Motel",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Queens Motel",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Forest House",
+            "location": "Rotorua",
+            "locationID": 3,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "President Hotel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Skyline Hotel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Palm Tree Hotel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Paradise Hotel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Pitt St Hostel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Star Hostel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Vintage Motel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Queens Motel",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Pool House",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "Forest House",
+            "location": "Wanaka",
+            "locationID": 4,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "Palm Tree Hotel",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Skyline Hotel",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Paradise Hotel",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Blue Hostel",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Pitt St Hostel",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "This Motel",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Queens Motel",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Forest House",
+            "location": "Wellington",
+            "locationID": 5,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "President Hotel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Skyline Hotel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Palm Tree Hotel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Paradise Hotel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Pitt St Hostel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Star Hostel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Vintage Motel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Queens Motel",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Pool House",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "Forest House",
+            "location": "Taupo",
+            "locationID": 6,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        },
+        {
+            "name": "Palm Tree Hotel",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Skyline Hotel",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Paradise Hotel",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 157,
+            "mingroupsize": 1,
+            "maxgroupsize": 2,
+            "minnights": 1,
+            "maxnights": 5
+        },
+        {
+            "name": "Blue Hostel",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "Pitt St Hostel",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 30,
+            "mingroupsize": 1,
+            "maxgroupsize": 1,
+            "minnights": 1,
+            "maxnights": 10
+        },
+        {
+            "name": "This Motel",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Queens Motel",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 90,
+            "mingroupsize": 2,
+            "maxgroupsize": 4,
+            "minnights": 3,
+            "maxnights": 10
+        },
+        {
+            "name": "Forest House",
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "price": 240,
+            "mingroupsize": 1,
+            "maxgroupsize": 4,
+            "minnights": 2,
+            "maxnights": 15
+        }
+    ],
+    "places": [
+        {
+            "location": "Queenstown",
+            "locationID": 1,
+            "locationLatitude": -45.0329, 
+            "locationLongitude": 168.651,
+            "markerLatitude": -45.03274,
+            "markerLongitude": 168.66269
+        },
+        {
+            "location": "Auckland",
+            "locationID": 2,
+            "locationLatitude": -36.852, 
+            "locationLongitude": 174.77,
+            "markerLatitude": -36.85034,
+            "markerLongitude": 174.76302
+        },
+        {
+            "location": "Rotorua",
+            "locationID": 3,
+            "locationLatitude": -38.1342, 
+            "locationLongitude": 176.244,
+            "markerLatitude": -38.14255,
+            "markerLongitude": 176.25182
+        },
+        {
+            "location": "Wanaka",
+            "locationID": 4,
+            "locationLatitude": -44.6989, 
+            "locationLongitude": 169.15008,
+            "markerLatitude": -44.70238,
+            "markerLongitude": 169.12272
+        },
+        {
+            "location": "Wellington",
+            "locationID": 5,
+            "locationLatitude": -41.2911, 
+            "locationLongitude": 174.77,
+            "markerLatitude": -41.29441,
+            "markerLongitude": 174.78537
+        },
+        {
+            "location": "Taupo",
+            "locationID": 6,
+            "locationLatitude": -38.688, 
+            "locationLongitude": 176.0709,
+            "markerLatitude": -38.68892,
+            "markerLongitude": 176.08865
+        },
+        {
+            "location": "Lake Tekapo",
+            "locationID": 7,
+            "locationLatitude": -44.003, 
+            "locationLongitude": 170.481,
+            "markerLatitude": -44.00649,
+            "markerLongitude": 170.47629
+        }
+    ],
+    "meals": [
+        {
+            "name": "breakfast",
+            "price": 15
+        },
+        {
+            "name": "no extra",
+            "price": 0
+        }
+    ]
+}
